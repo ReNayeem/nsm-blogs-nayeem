@@ -1,7 +1,7 @@
-import LoadingSkeleton from '@/components/shared/LoadingSkeleton';
+// import LoadingSkeleton from '@/components/shared/LoadingSkeleton';
 import './globals.css';
 import type { Metadata } from 'next';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 import Provider from '@/components/global/Provider';
 
 export const metadata: Metadata = {
@@ -16,11 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <Suspense fallback={<LoadingSkeleton />}>
-        <body>
-          <Provider>{children}</Provider>
-        </body>
-      </Suspense>
+      {/* <Suspense fallback={<LoadingSkeleton />}> */}
+      <body>
+        <Provider>{children}</Provider>
+      </body>
+      {/* </Suspense> */}
     </html>
   );
 }
