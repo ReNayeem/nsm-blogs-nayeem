@@ -2,6 +2,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 // import { Suspense } from 'react';
+import Provider from '@/components/global/Provider';
 
 export const metadata: Metadata = {
   title: 'nsm-blogs',
@@ -17,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       {/* <Suspense fallback={<LoadingSkeleton />}> */}
       <body>
-        {children}
+        <Provider>{children}</Provider>
       </body>
       {/* </Suspense> */}
     </html>
