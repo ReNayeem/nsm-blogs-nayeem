@@ -1,16 +1,17 @@
-import ThemeToggle from '@/components/global/ThemeToggle';
+import { ModeToggle } from '@/components/global/ModeToggle';
 import './../css/page.css';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
     <div>
       <div className='flex items-center gap-2'>
         Click the button to change the theme
-        <ThemeToggle />
+        <ModeToggle />
       </div>
 
-
-      <button className="btn-testing">Save Changes</button>
+      {/* Example of using ShadcnUI */}
+      <Button variant='destructive'>Click me</Button>
     </div>
   );
 }
