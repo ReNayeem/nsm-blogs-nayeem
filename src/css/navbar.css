@@ -1,0 +1,22 @@
+ul {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    ul {
+        align-items: normal;
+        justify-content: normal;
+        min-height: calc(100vh - 76px);
+    }
+
+    .search-bar {
+        margin-top: 10px !important;
+    }
+
+    .flowbite-navbar-collapse {
+        min-height: 100vh !important;
+    }
+}
