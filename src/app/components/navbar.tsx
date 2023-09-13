@@ -6,27 +6,29 @@ import './../../css/navbar.css'
 
 const navbar = () => {
     return (
-        <div>
+        <div className='fixed w-full'>
 
             <Navbar
                 fluid={true}
                 rounded={true}
+                className='bg-transparent'
             >
                 <Navbar.Brand href="https://flowbite.com/">
                     <img
                         src="https://flowbite.com/docs/images/logo.svg"
-                        className="mr-3 h-6 sm:h-9"
+                        className="mr-3 h-14 w-14"
                         alt="Flowbite Logo"
                     />
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-                        Flowbite
+                        NSM
                     </span>
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Navbar.Link
                         href="/navbars"
-                        active={true}
+                        // active={true}
+                        className='text-lg leading-none font-normal tracking-wide text-zinc-950 dark:text-slate-300'
                     >
                         Home
                     </Navbar.Link>

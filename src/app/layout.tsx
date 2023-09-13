@@ -18,7 +18,11 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           <Navbar />
-          {children}
+
+          <div className='pt-40'>
+            {children}
+          </div>
+
         </ThemeProvider>
       </body>
     </html>
