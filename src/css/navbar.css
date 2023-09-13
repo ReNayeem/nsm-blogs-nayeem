@@ -14,6 +14,7 @@ ul {
 
     .search-bar {
         margin-top: 10px !important;
+        max-width: 100% !important;
     }
 
     .flowbite-navbar-collapse {
@@ -21,8 +22,14 @@ ul {
     }
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    li:hover a {
-        color: black !important;
+@media only screen and (max-width: 875px) {
+    .search-bar {
+        max-width: 160px;
     }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    /* li:hover a {
+        color: black !important;
+    } */
 }
